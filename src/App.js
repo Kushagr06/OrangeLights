@@ -1,11 +1,13 @@
-// ~import './App.css';
+
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+
 
 function App() {
   return (
-    <div className="App bg-hero-bgs h-screen w-full bg-no-repeat bg-cover bg-center">
-     <h1 className="text-3xl font-bold underline text-secorange">
-    Hello world!
-    </h1>
+    <div>
+      <Navbar />
+      <Hero />
     </div>
   );
 }

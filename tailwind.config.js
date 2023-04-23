@@ -11,7 +11,10 @@ module.exports = {
       backgroundImage: {
         'hero-bgs': "url('./assets/heroImage.png')",
       },
-      
+      fontFamily:{
+        'K2D': ['K2D', 'Josefin Sans'],
+        'Blinker': ['Blinker', 'K2D']
+    },   
     },
   },
   plugins: [],
