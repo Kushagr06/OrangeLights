@@ -10,7 +10,7 @@ function Hero() {
       <div className='font-Blinker'>
     This is Blinker
       </div>
-      <div className='font-Blinker font-bold'>
+      <div className='font-Blinker font-bold text-6xl'>
     This is Blinker
       </div>
     </div>
