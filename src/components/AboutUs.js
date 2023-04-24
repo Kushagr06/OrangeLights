@@ -17,7 +17,7 @@ function AboutUs() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nostrum corporis cumque iure veniam sequi atque adipisci quisquam, harum magni officiis, magnam assumenda a accusamus natus 
         </div>
         <div className='text-[4vh] text-morange pt-10 font-semibold'>
-          GST Number:
+          GST Number: &nbsp;27AAEFV8363M1ZG
           </div>
         </div>
 
@@ -28,6 +28,7 @@ function AboutUs() {
           </div>
         </div>
         </div>
+        <HeroCar />
     </div>
   )
 }
