@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import ItemImage from "./components/ItemImage";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
+import Item from "./components/Item";
 
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
       {/* <Navbar />
       <Hero />
       <AboutUs />  
-      <Products />   */}
-      <ItemImage />
+      <Products />  
+       <ItemImage /> */}
+       <Item />
     </div>
   );
 }
