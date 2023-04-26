@@ -4,11 +4,11 @@ import {IoIosCall} from 'react-icons/io'
 function Navbar() {
    const [toggle, settoggle] = useState('hidden ')
 
- const prop=` w-full md:block md:w-auto ${toggle}`
+ const prop=` w-full md:block md:w-auto mx-auto ${toggle}`
   return (
 
   <div className=' overflow-clip'> 
-<nav  className="rounded fixed top-0 left-0 right-0 z-10 overflow-hidden bg-mwhite">
+<nav  className="rounded fixed top-0 left-0 right-0 z-10 overflow-hidden bg-mwhite opacity-90">
   
   <div className="container flex flex-wrap items-center justify-between mx-auto">
             <button className='text-secorange font-Blinker font-bold text-xl mx-4 cursor-default'>
@@ -22,23 +22,23 @@ function Navbar() {
     </button>
 
     <div className={prop} id="navbar-sticky">
-      <ul className="flex flex-col p-4 md:flex-row md:space-x-10 md:text-sm md:font-medium md:border-0 px-16 ">
+      <ul className="flex flex-col p-4 md:flex-row md:space-x-10 md:text-sm md:font-medium md:border-0">
         <li>
-          <a href="/events" className="  text-xl container flex flex-wrap items-center justify-between mx-auto text-morange font-Blinker hover:underline">
+          <a href="/events" className="  text-xl container flex flex-wrap items-center justify-between  text-morange font-Blinker hover:underline md:mx-auto md:ml-32">
             <button>
             About
             </button>
             </a>
         </li>
         <li>
-          <a href="/members" className=" text-xl  text-gray-300 container flex flex-wrap items-center justify-between mx-auto text-morange font-Blinker hover:underline">
+          <a href="/members" className=" text-xl  text-gray-300 container flex flex-wrap items-center justify-between text-morange font-Blinker hover:underline md:mx-auto">
             <button>
             Products
             </button>
             </a>
         </li>
         <li>
-          <a href="/alumni" className=" text-xl  text-gray-300 container flex flex-wrap items-center justify-between mx-auto text-morange font-Blinker hover:underline">
+          <a href="/alumni" className=" text-xl  text-gray-300 container flex flex-wrap items-center justify-between text-morange font-Blinker hover:underline md:mx-auto">
             <button>
            Find Us
             </button>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Productbar from './ProductsBar'
+import Items from './Items'
 
 function Products() {
   return (
@@ -9,6 +10,7 @@ function Products() {
         <div className="text-mwhite text-[10vh] font-semibold px-4">
           Our Products
         </div>
+        <Items />
     </div>
     </>
   )
