@@ -9,11 +9,11 @@ import Products from "./components/Products";
 function App() {
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
       <AboutUs />  
-      <Products />      */}
-      <Item />
+      <Products />     
+      {/* <Item /> */}
     </div>
   );
 }
