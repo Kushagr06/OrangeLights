@@ -2,20 +2,29 @@
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Item from "./components/Item";
+// import Item from "./components/Item";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 
 
+
+
 function App() {
   return (
-    <div>
+    <div className="scroll-smooth">    
       <Navbar />
+      <div id="Hero">
       <Hero />
-      <AboutUs />  
-      <Products />     
-      {/* <Item /> */}
+      </div>
+      <div id="About">
+      <AboutUs />
+      </div>
+      <div id="Products">
+      <Products /> 
+      </div>
+      <div id="Find">   
       <Footer />
+      </div>  
     </div>
   );
 }

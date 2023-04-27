@@ -44,3 +44,7 @@
     transform: rotate(360deg);
   }
 }
+
+#nav-item > .active {
+    border-bottom: 2px solid #FF5719;
+}

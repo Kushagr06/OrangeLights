@@ -8,13 +8,13 @@ function Footer() {
   return (
    
      <div className='font-Blinker py-2'>
-        <div className="text-morange text-[10vh] font-semibold px-4 mb-4">
-         Find Us
+        <div className="text-morange text-[10vh] font-semibold px-4">
+          Find Us
         </div>
         
-        <div className='text-[4vh] text-morange font-semibold py-4 ml-5'>
-          <span>
-        <IoIosCall className='-mt-2 inline-block' /> &nbsp;+91-9009009090
+        <div className='sm:text-[4vw] text-[5vw] text-morange font-semibold ml-3 mt-8'>
+          <span className=''>
+        <IoIosCall className='inline-block' /> &nbsp;+91-9009009090
         </span>
         <br />
         <span>
@@ -37,8 +37,8 @@ function Footer() {
         </a>
         </span>
         <span>
-        <a href='/' className='hover:cursor-pointer'>
-              <img src={indiamart} alt="Indiamart" className='w-auto h-14'/>
+        <a href='/' className='hover:cursor-pointer bg-mwhite border-2 border-mwhite'>
+              <img src={indiamart} alt="Indiamart" className='w-auto sm:h-[7vw] h-[10vw]'/>
         </a>
         </span>
           </div>  

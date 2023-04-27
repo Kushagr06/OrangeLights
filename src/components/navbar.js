@@ -1,5 +1,8 @@
 import React,{useState} from 'react'
 import {IoIosCall} from 'react-icons/io'
+import { Link} from "react-scroll";
+import '../App.css'
+
 
 function Navbar() {
    const [toggle, settoggle] = useState('hidden ')
@@ -10,10 +13,18 @@ function Navbar() {
   <div className=' overflow-clip'> 
 <nav  className="rounded fixed top-0 left-0 right-0 z-10 overflow-hidden bg-mwhite opacity-90">
   
-  <div className="container flex flex-wrap items-center justify-between mx-auto">
-            <button className='text-secorange font-Blinker font-bold text-xl mx-4 cursor-default'>
+  <div className="container flex flex-wrap items-center justify-between mx-auto ">
+        <Link 
+            activeClass='active'
+            to='Hero'
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}>
+            <button className='text-secorange font-Blinker font-bold text-xl mx-4 cursor-pointer'>
             VLIGHT INDUSTRIES
             </button>  
+        </Link>
                       
     <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-iemctwhite rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false" onClick={ ()=>{toggle==='hidden'?settoggle(' '):settoggle('hidden') }} 
     >
@@ -22,27 +33,51 @@ function Navbar() {
     </button>
 
     <div className={prop} id="navbar-sticky">
-      <ul className="flex flex-col p-4 md:flex-row md:space-x-10 md:text-sm md:font-medium md:border-0">
+      <ul className="flex flex-col p-4 md:flex-row md:space-x-10 md:text-sm md:font-medium md:border-0 lg:ml-28">
         <li>
-          <a href="/events" className="  text-xl container flex flex-wrap items-center justify-between  text-morange font-Blinker hover:underline md:mx-auto md:ml-32">
+          <div className="  text-xl container flex flex-wrap items-center  text-morange font-Blinker hover:underline md:mx-auto justify-center" id="nav-item">
+            <Link 
+            activeClass='active'
+            to='About'
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}>
             <button>
             About
             </button>
-            </a>
+            </Link>
+            </div>
         </li>
         <li>
-          <a href="/members" className=" text-xl  text-gray-300 container flex flex-wrap items-center justify-between text-morange font-Blinker hover:underline md:mx-auto">
+          <div className=" text-xl  text-gray-300 container flex flex-wrap items-center  text-morange font-Blinker hover:underline md:mx-auto justify-center" id="nav-item">
+          <Link 
+            activeClass='active'
+            to='Products'
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}>
             <button>
             Products
             </button>
-            </a>
+            </Link>
+            </div>
         </li>
         <li>
-          <a href="/alumni" className=" text-xl  text-gray-300 container flex flex-wrap items-center justify-between text-morange font-Blinker hover:underline md:mx-auto">
+          <div className=" text-xl  text-gray-300 container flex flex-wrap items-center  text-morange font-Blinker hover:underline md:mx-auto justify-center" id="nav-item">
+          <Link 
+            activeClass='active'
+            to='Find'
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}>
             <button>
            Find Us
             </button>
-            </a>
+            </Link>
+            </div>
         </li>   
       </ul>
     </div>
