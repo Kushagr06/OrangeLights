@@ -26,7 +26,7 @@ function Item() {
       </div>
 
       {/* <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center" src="https://dummyimage.com/400x400" /> */}
-      <div className="lg:w-1/2 lg:h-auto h-auto object-center w-auto ">
+      <div className="lg:w-1/2 lg:h-auto object-center">
       <ItemImage />
       </div>
     </div>
