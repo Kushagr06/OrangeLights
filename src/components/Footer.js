@@ -37,8 +37,8 @@ function Footer() {
         </a>
         </span>
         <span>
-        <a href='..' className='hover:cursor-pointer'>
-              <img src={indiamart} alt="Indiamart" className='scale-50'/>
+        <a href='/' className='hover:cursor-pointer'>
+              <img src={indiamart} alt="Indiamart" className='w-auto h-14'/>
         </a>
         </span>
           </div>  
