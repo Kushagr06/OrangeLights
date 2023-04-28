@@ -18,9 +18,12 @@ function Products() {
     </div>
   </header>
     </div>
-      <div className='font-Blinker py-2 bg-morange'>
+      <div className='font-Blinker py-4 bg-morange'>
         <div className="text-mwhite text-[10vh] font-semibold px-4">
           Our Products 
+        </div>
+        <div className="text-mwhite text-[6vh] font-semibold px-10">
+          Category {info[0].category} 
         </div>
         <Items data={info} />
     </div>
