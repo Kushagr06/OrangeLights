@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 
 
 function ItemImage(props) {
@@ -6,14 +6,11 @@ function ItemImage(props) {
   const [pic, setPic] = useState(data[0])
   const num=data.length;
 
-  useEffect(()=>{
-    window.scrollTo({top:0,left:0});
-  })
   return (
     <div className='flex flex-col-reverse'> 
 
     <div className='flex justify-center py-1'>
-          <img alt="ecommerce" className="w-auto lg:h-[65vh] m-2 p-2 overflow-auto h-[37vh]"src={`https://drive.google.com/uc?export=view&id=${pic}`} />
+          <img alt="unavailable" className="w-auto lg:h-[65vh] m-2 p-2 overflow-auto h-[37vh]"src={`https://drive.google.com/uc?export=view&id=${pic}`} />
     </div>
 
    <div className='flex justify-center'>

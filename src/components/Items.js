@@ -13,7 +13,8 @@ function Items(props) {
 {/* Card */}
     {info.map(data =>(
                         <div className="p-4 md:w-1/3 lg:w-1/4 w-3/4" key={`${data.category}${data.id}`}>
-                          <Link to={`/item/${data.category}/${data.id}`} state={data}>
+                          <Link to={`/${data.category}/${data.id}`} state={data}>
+                            
                         <div className="h-full border-2 border-gray-200 border-opacity-30 bg-mwhite overflow-hidden hover:bg-secorange duration-200 hover:cursor-pointer">
                           <img className="md:h-36 lg:h-56 w-full object-cover object-center" src={`https://drive.google.com/uc?export=view&id=${data.images[0]}`} alt="blog" />
                           <div className="p-6 ">

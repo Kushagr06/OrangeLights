@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name":"FloodLights"
+  },
+  {
+    "id": "2",
+    "name":"BigLights"
+  },
+  {
+    "id": "3",
+    "name":"StreetLights"
+  },
+  {
+    "id": "4",
+    "name":"HomeLights"
+  },
+  {
+    "id": "5",
+    "name":"DoctorLights"
+  },
+  {
+    "id": "6",
+    "name":"weddingLights"
+  }
+]
