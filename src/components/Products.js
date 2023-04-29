@@ -27,7 +27,7 @@ function Products() {
         <div className="text-mwhite text-[6vh] font-semibold px-10">
           Category: {Category.name} 
         </div>
-        { cat.length>0 && Category!=null?<Items data={cat} />: <div className='text-2xl p-5 text-mwhite flex justify-center'>No Items currently available</div>}
+        { cat.length>0 && Category!=null?<Items data={cat} category={Category} />: <div className='text-2xl p-5 text-mwhite flex justify-center'>No Items currently available</div>}
        
     </div>
     </>

@@ -24,7 +24,6 @@ function Item() {
     <div className="lg:w-4/5 mx-auto my-auto flex flex-wrap p-4 border-2 border-y-morange border-x-mwhite rounded-xl overflow-auto">
       <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
        
-        <h2 className="text-sm title-font text-gray-500 tracking-widest">CATEGORY {data.category}</h2>
         <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">{data.name}</h1>
         <div className="flex mb-4">
           <div className="flex-grow text-indigo-500 border-b-2 border-indigo-500 py-2 text-lg px-1">Description
