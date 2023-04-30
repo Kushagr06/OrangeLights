@@ -8,7 +8,7 @@ function Footer() {
   return (
    
      <div className='font-Blinker py-2'>
-        <div className="text-morange text-[10vh] font-semibold px-4">
+         <div className="text-morange text-[10vh] font-semibold px-4 flex lg:justify-start justify-center">
           Find Us
         </div>
         
