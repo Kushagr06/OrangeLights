@@ -12,6 +12,7 @@ function Items(props) {
     <div className="flex flex-wrap -m-4">
     {console.log(info)}
 {/* Card */}
+    
     {info.map(data =>(
                         <div className="p-4 md:w-1/3 lg:w-1/4 w-3/4" key={`${data.category}${data.id}`}>
                           <Link to={`/${cat.name}/${data.id}`} state={data}>
@@ -21,7 +22,7 @@ function Items(props) {
                           <div className="p-6 ">
                             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{cat.name} </h2>
                             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{data.name}</h1>
-                            <p className="leading-relaxed mb-3">{data.price} INR</p>
+                            
                             <div className="flex items-center flex-wrap ">    
                                 <button>
                               <div className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
@@ -39,8 +40,6 @@ function Items(props) {
                          
                         
     )) }
-    
-
     </div>
   </div>
 </section>   

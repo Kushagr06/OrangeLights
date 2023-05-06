@@ -2,10 +2,12 @@ import React ,{useEffect} from 'react'
 import ItemImage from './ItemImage'
 import {useLocation} from 'react-router-dom'
 import {FaArrowLeft} from 'react-icons/fa'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import {IoIosCall} from 'react-icons/io'
+import {useNavigate} from 'react-router-dom'
 
 function Item() {
+  const navigate=useNavigate()
   const location= useLocation();
   const data=location.state
   useEffect(()=>{
@@ -16,10 +18,10 @@ function Item() {
       <section className="text-gray-600 body-font overflow-auto font-Blinker">
 
   <div className="container px-5 py-12 mx-auto">
-  <div className='text-morange p-5'> 
-          <Link to="/">     
+  <div className='text-morange p-5 cursor-pointer'> 
+          <button onClick={()=>navigate(-1)}>     
           <FaArrowLeft />
-          </Link>  
+          </button>  
         </div>
     <div className="lg:w-4/5 mx-auto my-auto flex flex-wrap p-4 border-2 border-y-morange border-x-mwhite rounded-xl overflow-auto">
       <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
@@ -32,7 +34,6 @@ function Item() {
 
         <p className="leading-relaxed mb-4">{data.description}</p>
         <div className="flex">
-          <span className="title-font font-semibold text-2xl text-gray-900">{data.price} INR</span>
           
           <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
           </button>
