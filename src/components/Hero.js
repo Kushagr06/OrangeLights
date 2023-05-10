@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../assets/logo.svg'
 import {SlArrowDown} from 'react-icons/sl';
 import { Link} from 'react-scroll';
+import '../App.css'
 
 
 function Hero() {
@@ -24,7 +25,7 @@ function Hero() {
         <div>
     Our Products
     </div>
-    <div className="flex justify-center text-[7vh] mb-2">
+    <div className="flex justify-center text-[7vh] mb-2" id="arrow">
       <SlArrowDown/>   
     </div>
     </button>
